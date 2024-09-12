@@ -1,12 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-
-    <h2>Welcome to Article Management System</h2>
-
+    <div class="container">
+        <div class="row">
         {% for article in articles %}
-            <h2> {{ article }}</h2>
+            <div class="col s6 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{{ url_for('static',filename='image/image1.jpg') }}">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">{{ article }}</a>
+                </div>
+              </div>
+            </div>
         {% endfor %}
-
+    </div>
+    </div>
 {% endblock %}

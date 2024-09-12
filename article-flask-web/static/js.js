@@ -1,2 +1,2 @@
-
-alert("Welcome to AMS")
+//
+// alert("Welcome to AMS")

@@ -24,4 +24,11 @@ num = 123
 
 # Alignment
 msg = "Hello"
-print(f"{msg:^20}")
+# print(f"{msg:^20}")
+
+
+
+myData = 1
+print(myData)
+myData = "Welcome"
+print(myData)
